@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Calculator App</title>
+    
+    <!--Add js script and jquery here-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js" defer></script>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css">
+ 
+  </head>  
+  <body>
+    <div class="wrapper">
+        <section class="calculator-screen">
+          <div class="row">
+            <article class="col-four">
+              <input type="text" class="expression" disabled />
+            </article>
+          </div>
+        </section>
+    
+        <section class="calculator-buttons">
+          <div class="row">
+            <article class="col-two">
+              <button class="clear"> C </button>
+            </article>
+            <article class="col-one">
+              <button class="backspace"> &larr; </button>
+            </article>
+            <article class="col-one">
+              <button class="operator" data-value="&divide;"> &divide; </button>
+            </article>
+          </div>
+          <div class="row">
+              <article class="col-one">
+                <button class="number" data-value="7"> 7 </button>
+              </article>
+              <article class="col-one">
+                <button class="number" data-value="8"> 8 </button>
+              </article>
+              <article class="col-one">
+                <button class="number" data-value="9"> 9 </button>
+              </article>
+              <article class="col-one">
+                <button class="operator" data-value="x"> &times; </button>
+              </article>
+          </div>
+          <div class="row">
+              <article class="col-one">
+                <button class="number" data-value="4"> 4 </button>
+              </article>
+              <article class="col-one">
+                <button class="number" data-value="5"> 5 </button>
+              </article>
+              <article class="col-one">
+                <button class="number" data-value="6"> 6 </button>
+              </article>
+              <article class="col-one">
+                <button class="operator" data-value="-"> &minus; </button>
+              </article>
+          </div>
+          <div class="row">
+              <article class="col-one">
+                <button class="number" data-value="1"> 1 </button>
+              </article>
+              <article class="col-one">
+                <button class="number" data-value="2"> 2 </button>
+              </article>
+              <article class="col-one">
+                <button class="number" data-value="3"> 3 </button>
+              </article>
+              <article class="col-one">
+                <button class="operator" data-value="+"> &plus; </button>
+              </article>
+          </div>
+          <div class="row">
+              <article class="col-three">
+                <button class="number" data-value="0"> 0 </button>
+              </article>
+              <article class="col-one">
+                <button class="equals operator"> &equals; </button>
+              </article>
+          </div>
+        </section>
+    </div>
+  </body>
+</html>
